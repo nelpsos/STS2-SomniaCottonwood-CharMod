@@ -1,0 +1,49 @@
+{
+	"Custom Card": {
+		"prefix": "card",
+		"body": [
+			"namespace ${1:${TM_DIRECTORY/.*\\///}};",
+			"",
+			"public class ${2:ClassName}() : SomniaCottonwood.SomniaCottonwoodCode.Cards.SomniaCottonwoodCard(${3:cost}, MegaCrit.Sts2.Core.Entities.Cards.CardType.${4|Attack,Skill,Power,Status,Curse,Quest|}, MegaCrit.Sts2.Core.Entities.Cards.CardRarity.${5|Basic,Common,Uncommon,Rare,Ancient,Event,Token,Status,Curse,Quest|}, MegaCrit.Sts2.Core.Entities.Cards.TargetType.${6|Self,AnyEnemy,AllEnemies,RandomEnemy,AnyPlayer,AnyAlly,AllAllies,Osty|}) {",
+			"    protected override IEnumerable<MegaCrit.Sts2.Core.Localization.DynamicVars.DynamicVar> CanonicalVars => [];",
+			"",
+			"    protected override async System.Threading.Tasks.Task OnPlay(MegaCrit.Sts2.Core.GameActions.Multiplayer.PlayerChoiceContext choiceContext, MegaCrit.Sts2.Core.Entities.Cards.CardPlay play)",
+			"    {",
+			"        ${0}",
+			"    }",
+			"",
+			"    protected override void OnUpgrade() {",
+			"        ",
+			"    }",
+			"}"
+		],
+		"description": "Custom Card template"
+	},
+	"Custom Relic": {
+		"prefix": "relic",
+		"body": [
+			"namespace ${1:${TM_DIRECTORY/.*\\///}};",
+			"",
+			"public class ${2:ClassName}() : SomniaCottonwood.SomniaCottonwoodCode.Relics.SomniaCottonwoodRelic {",
+			"    public override MegaCrit.Sts2.Core.Entities.Relics.RelicRarity Rarity => MegaCrit.Sts2.Core.Entities.Relics.RelicRarity.${3|Starter,Common,Uncommon,Rare,Shop,Event,Ancient|};",
+			"    ",
+			"    ${0}",
+			"}"
+		],
+		"description": "Custom Relic template"
+	},
+	"Custom Power": {
+		"prefix": "power",
+		"body": [
+			"namespace ${1:${TM_DIRECTORY/.*\\///}};",
+			"",
+			"public class ${2:ClassName}() : SomniaCottonwood.SomniaCottonwoodCode.Powers.SomniaCottonwoodPower {",
+			"    public override MegaCrit.Sts2.Core.Entities.Powers.PowerType Type => MegaCrit.Sts2.Core.Entities.Powers.PowerType.${3|Buff,Debuff|};",
+			"    public override MegaCrit.Sts2.Core.Entities.Powers.PowerStackType StackType => MegaCrit.Sts2.Core.Entities.Powers.PowerStackType.Counter;",
+			"    ",
+			"    ${0}",
+			"}"
+		],
+		"description": "Custom Power template"
+	}
+}
