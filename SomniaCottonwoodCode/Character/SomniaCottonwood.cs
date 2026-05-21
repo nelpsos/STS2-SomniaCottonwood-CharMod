@@ -21,17 +21,14 @@ public class SomniaCottonwood : PlaceholderCharacterModel
     public override int StartingHp => 70;
 
     public override IEnumerable<CardModel> StartingDeck => [
-        new StrikeSomniaCottonwood(),
-        new StrikeSomniaCottonwood(),
-        new StrikeSomniaCottonwood(),
-        new StrikeSomniaCottonwood(),
-        new StrikeSomniaCottonwood(),
-        new StrikeSomniaCottonwood(),
-        new DefendSomniaCottonwood(),
-        new DefendSomniaCottonwood(),
-        new DefendSomniaCottonwood(),
-        new DefendSomniaCottonwood(),
-        new DefendSomniaCottonwood()
+        ModelDb.Card<StrikeSomniaCottonwood>(),
+        ModelDb.Card<StrikeSomniaCottonwood>(),
+        ModelDb.Card<StrikeSomniaCottonwood>(),
+        ModelDb.Card<StrikeSomniaCottonwood>(),
+        ModelDb.Card<DefendSomniaCottonwood>(),
+        ModelDb.Card<DefendSomniaCottonwood>(),
+        ModelDb.Card<DefendSomniaCottonwood>(),
+        ModelDb.Card<DefendSomniaCottonwood>()
     ];
 
     public override IReadOnlyList<RelicModel> StartingRelics =>

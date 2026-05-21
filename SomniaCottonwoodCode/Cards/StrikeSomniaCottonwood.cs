@@ -2,13 +2,10 @@ using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.ValueProps;
-using BaseLib.Utils;
 using SomniaCottonwood.SomniaCottonwoodCode.Cards;
-using SomniaCottonwood.SomniaCottonwoodCode.Character;
 
 namespace SomniaCottonwoodCode.Cards;
 
-[Pool(typeof(SomniaCottonwoodCardPool))]
 public class StrikeSomniaCottonwood() : SomniaCottonwoodCard(1, CardType.Attack, CardRarity.Basic, TargetType.AnyEnemy)
 {
     protected override HashSet<CardTag> CanonicalTags => [CardTag.Strike];

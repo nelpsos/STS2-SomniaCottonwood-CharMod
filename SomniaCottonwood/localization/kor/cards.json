@@ -1,6 +1,6 @@
 {
   "SOMNIACOTTONWOODCODE-STRIKE_SOMNIA_COTTONWOOD.description": "피해를 {Damage:diff()} 줍니다.",
   "SOMNIACOTTONWOODCODE-STRIKE_SOMNIA_COTTONWOOD.title": "타격",
-  "SOMNIACOTTONWOODCODE-DEFEND_SOMNIA_COTTONWOOD.description": "방어도를 {Block:diff()} 얻습니다.",
+  "SOMNIACOTTONWOODCODE-DEFEND_SOMNIA_COTTONWOOD.description": "[gold]방어도[/gold]를 {Block:diff()} 얻습니다.",
   "SOMNIACOTTONWOODCODE-DEFEND_SOMNIA_COTTONWOOD.title": "수비"
 }
